@@ -29,10 +29,41 @@
         width: 100%;
         padding: 8px;
         marging-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
     }
-
+    button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h2>formulário de contatos</h2>
+        <form>
+            <div class="form-group">
+                <label for="nome">nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+        <div>  class="form-group">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="telefone"> telefone</label>
+            <input type="tel" id="telefone" name="telefone">
+        </div>
+        <div class="form-group">
+            <label for="mensagem"> mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>    
+</head>    
 </body>
 </html>
